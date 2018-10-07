@@ -1,96 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-body {
-    margin: 10px auto 0 auto;
-    font-family: "Noto Sans", "Helvetica", "Arial", "Verdana", "Roboto", sans-serif;
-    max-width: 1024px;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .content {
-    display: grid;
-    grid-template-areas: "general main";
-    grid-template-columns: 30% 70%;
-}
-
-.font-color-general {
-    color: #1E90FF;
-}
-
-.font-color-subparagraph {
-    color: rgb(118, 205, 216);
-}
-
-.font-color-emphasize {
-    color: rgb(38, 56, 82)
-}
-
-.add-bottom-gap-small {
-    margin-bottom: 5px;
-}
-
-.add-left-gap-small {
-    margin-left: 5px;
-}
-
-.add-bottom-gap-medium {
-    margin-bottom: 10px;
-}
-
-.add-left-gap-medium {
-    margin-left: 10px;
-}
-
-.photo {
-    background: url("../assets/images/linus_torvalds.png") no-repeat center;
-    background-size: cover;
-    min-height: 300px;
-}
-
-.center-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner-header {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.inner-header-subparagraph {
-    font-weight: bold;
-    font-size: 19px;
-}
-
-.main-year {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.inner-main {
-    font-weight: normal;
-    font-size: 17px;
+  display: grid;
+  grid-template-areas: "general main";
+  grid-template-columns: 30% 70%;
 }
 
 .inner-grid {
-    grid-area: general;
-    display: grid;
-    grid-template-rows: auto;
-    align-items: center;
-    grid-gap: 35px;
-    max-height: 600px;
+  grid-area: general;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-gap: 35px;
+  max-height: 600px;
 }
 
 .inner-grid-main {
-    grid-area: main;
-    display: grid;
-    grid-template-rows: auto;
-    margin-left: 10px;
-    grid-gap: 10px;
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto;
+  margin-left: 10px;
+  grid-gap: 10px;
 }
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-bottom-gap-small {
+  margin-bottom: 5px;
+}
+
+.add-left-gap-small {
+  margin-left: 5px;
+}
+
+.add-bottom-gap-medium {
+  margin-bottom: 10px;
+}
+
+.add-left-gap-medium {
+  margin-left: 10px;
+}
+
+body {
+  margin: 10px auto 0 auto;
+  font-family: "Noto Sans", "Helvetica", "Arial", "Verdana", "Roboto", sans-serif;
+  max-width: 1024px;
+}
+
+.inner-header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.inner-header-subparagraph {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.main-year {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.inner-main {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.font-color-general {
+  color: #1E90FF;
+}
+
+.font-color-subparagraph {
+  color: rgb(118, 205, 216);
+}
+
+.font-color-emphasize {
+  color: rgb(38, 56, 82)
+}
+
+.photo {
+  background: url("../assets/images/linus_torvalds.png") no-repeat center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+
+
+
+
+
 
 
