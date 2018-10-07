@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Curriculum Vitae</title>
+</head>
+<body>
+<div class="content">
+  <div class="inner-grid">
+    <div class="photo"></div>
+    <div class="inner-header center-text font-color-emphasize add-bottom-gap-medium">Andrei Torvalds</div>
+    <div>
+      <div class="inner-header center-text font-color-general add-bottom-gap-medium">Address</div>
+      <div class="inner-main center-text">Minsk Noname Street 123</div>
+    </div>
+    <div>
+      <div class="inner-header center-text font-color-general add-bottom-gap-medium">Phone</div>
+      <div class="inner-main center-text">+ 375 44 738-69-90</div>
+    </div>
+    <div>
+      <div class="inner-header center-text font-color-general add-bottom-gap-medium">Email</div>
+      <div class="inner-main center-text">mill9r@gmail.com</div>
+    </div>
+    <div>
+      <div class="inner-header center-text font-color-general add-bottom-gap-medium">Languages</div>
+      <div class="inner-main center-text">English B2</div>
+      <div class="inner-main center-text">German B1</div>
+    </div>
+  </div>
+  <div class="inner-grid-main">
+    <div>
+      <div class="inner-header font-color-general add-bottom-gap-medium">Objective / Summary</div>
+      <div class="inner-main add-left-gap-small">Obtain a IT Specialist position where, I can maximize my skills
+        and development
+      </div>
+    </div>
+    <div>
+      <div class="inner-header font-color-general add-bottom-gap-medium">Education</div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">2015-2017</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">School of Business and Management of
+          Technology of BSU– Software engineer
+          (Belarus)
+        </div>
+      </div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">February 2017-April 2017</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">EPAM “Test Automation Engineer” Training
+        </div>
+      </div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">2014-2015</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">The University of Passau– Faculty of
+          Arts and Humanities (Germany)
+        </div>
+      </div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">2012-2016</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">European Humanities University– Media
+          and Communication(Lithuania)
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="inner-header font-color-general add-bottom-gap-medium">Skills</div>
+      <div class="inner-header-subparagraph font-color-subparagraph add-bottom-gap-small add-left-gap-small">Programming
+        languages
+      </div>
+      <div class="inner-main add-bottom-gap-small add-left-gap-medium">Java</div>
+      <div class="inner-main add-bottom-gap-small add-left-gap-medium">Python</div>
+      <div class="inner-main add-bottom-gap-small add-left-gap-medium">JavaScript</div>
+      <div class="inner-header-subparagraph font-color-subparagraph add-bottom-gap-small add-left-gap-small">
+        Frameworks
+      </div>
+      <div class="inner-main add-bottom-gap-small add-left-gap-medium">React/Redux</div>
+      <div class="inner-main add-bottom-gap-small add-left-gap-medium">Python Flask</div>
+    </div>
+    <div>
+      <div class="inner-header font-color-general add-bottom-gap-medium">Work Experience</div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">July 2017-now</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">EPAM Systems, Performance engineer
+        </div>
+      </div>
+      <div>
+        <div class="inner-main main-year add-bottom-gap-small add-left-gap-small">August 2018-now</div>
+        <div class="inner-main add-bottom-gap-small add-left-gap-medium">Freelance, JS Developer. Musix.ru
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="inner-header font-color-general add-bottom-gap-medium">Code example</div>
+      <div class="inner-main">
+                <pre>
+                const request = (value) => {
+                const promiseId = fetch('https://api.myjson.com/bins/eueky');
+                const promiseGame = fetch('https://api.myjson.com/bins/kbt2a');
+
+                const table = document.getElementById('results');
+                    if (table.childNodes.length >= 1) {
+                        clearDiv('results');
+                    }
+                    Promise.all([promiseId, promiseGame])
+                    .then(responses => Promise.all(responses.map(res => res.json()))
+                    )
+                    .then(response => {
+                        const games = parseGame(response[1][value]);
+                        const users = getUsers(response[0]);
+                        const rounds = parseRound(response[1][value]);
+                        const table = document.getElementById('results');
+                        const tableHeader = games.slice();
+                        tableHeader.unshift({'gameName': 'User name'});
+                        tableHeader.push({'gameName': 'Sum'});
+                        createTableHeader(table, tableHeader, 'gameName');
+                        table.appendChild(createTableRows(rounds, users, games));
+                        table.style.display = 'block';
+                    })
+                };
+                    </pre>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
