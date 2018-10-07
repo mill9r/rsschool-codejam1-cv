@@ -5,6 +5,58 @@
 }
 
 body {
+    margin: 0 auto;
     font-family: "Noto Sans", "Helvetica", "Arial", "Verdana", "Roboto", sans-serif;
+    max-width: 1024px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: "general main";
+    grid-template-columns: 30% 70%;
+}
+
+.font-color {
+    color: #1E90FF;
+}
+
+.add-bottom-gap-small{
+    margin-bottom: 10px;
+}
+
+.photo {
+    background: url("../assets/images/linus_torvalds.png") no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inner-main {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.inner-grid {
+    grid-area: general;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-gap: 35px;
+}
+
+.inner-grid-main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto;
 }
 
