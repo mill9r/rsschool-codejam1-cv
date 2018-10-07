@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     font-family: "Noto Sans", "Helvetica", "Arial", "Verdana", "Roboto", sans-serif;
     max-width: 1024px;
 }
@@ -20,12 +20,28 @@ body {
     color: #1E90FF;
 }
 
-.font-color-subparagraph{
+.font-color-subparagraph {
     color: rgb(118, 205, 216);
 }
 
+.font-color-emphasize {
+    color: rgb(38, 56, 82)
+}
+
 .add-bottom-gap-small {
+    margin-bottom: 5px;
+}
+
+.add-left-gap-small {
+    margin-left: 5px;
+}
+
+.add-bottom-gap-medium {
     margin-bottom: 10px;
+}
+
+.add-left-gap-medium {
+    margin-left: 10px;
 }
 
 .photo {
