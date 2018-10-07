@@ -9,22 +9,101 @@
 <div class="content">
     <div class="inner-grid">
         <div class="photo"></div>
-        <div class="inner-header center-text font-color add-bottom-gap-small">Andrei Torvalds</div>
+        <div class="inner-header center-text font-color-general add-bottom-gap-small">Andrei Torvalds</div>
         <div>
-            <div class="inner-header center-text font-color add-bottom-gap-small">Address</div>
+            <div class="inner-header center-text font-color-general add-bottom-gap-small">Address</div>
             <div class="inner-main center-text">Minsk Noname Street 123</div>
         </div>
         <div>
-            <div class="inner-header center-text font-color add-bottom-gap-small">Phone</div>
-            <div class="inner-main center-text">Minsk Noname Street 123</div>
+            <div class="inner-header center-text font-color-general add-bottom-gap-small">Phone</div>
+            <div class="inner-main center-text">+ 375 44 738-69-90</div>
         </div>
         <div>
-            <div class="inner-header center-text font-color add-bottom-gap-small">Languages</div>
+            <div class="inner-header center-text font-color-general add-bottom-gap-small">Languages</div>
             <div class="inner-main center-text">English B2</div>
             <div class="inner-main center-text">German B1</div>
         </div>
     </div>
-    <div class="inner-grid-main"></div>
+    <div class="inner-grid-main">
+        <div>
+            <div class="inner-header font-color-general">Objective / Summary</div>
+            <div class="inner-main ">Obtain a IT Specialist position where, I can maximize my skills and development
+            </div>
+        </div>
+        <div>
+            <div class="inner-header font-color-general">Education</div>
+            <div>
+                <div class="inner-main main-year">2015-2017</div>
+                <div class="inner-main">School of Business and Management of Technology of BSU– Software engineer
+                    (Belarus)
+                </div>
+            </div>
+            <div>
+                <div class="inner-main main-year">2014-2015</div>
+                <div class="inner-main">The University of Passau– Faculty of Arts and Humanities (Germany)
+                </div>
+            </div>
+            <div>
+                <div class="inner-main main-year">2012-2016</div>
+                <div class="inner-main">European Humanities University– Media and Communication(Lithuania)
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="inner-header font-color-general">Skills</div>
+            <div class="inner-header-subparagraph font-color-subparagraph">Programming languages</div>
+            <div class="inner-main">Java</div>
+            <div class="inner-main">Python</div>
+            <div class="inner-main">JavaScript</div>
+            <div class="inner-header-subparagraph font-color-subparagraph">Frameworks</div>
+            <div class="inner-main">React/Redux</div>
+            <div class="inner-main">Python Flask</div>
+        </div>
+        <div>
+            <div class="inner-header font-color-general">Work Experience</div>
+            <div>
+                <div class="inner-main main-year">July 2017-now</div>
+                <div class="inner-main">EPAM Systems, Performance engineer
+                </div>
+            </div>
+            <div>
+                <div class="inner-main main-year">August 2018-now</div>
+                <div class="inner-main">Freelance, JS Developer. Musix.ru
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="inner-header font-color-general">Code example</div>
+            <div class="inner-main">
+                <pre>
+                const request = (value) => {
+                const promiseId = fetch('https://api.myjson.com/bins/eueky');
+                const promiseGame = fetch('https://api.myjson.com/bins/kbt2a');
+
+                const table = document.getElementById('results');
+                    if (table.childNodes.length >= 1) {
+                        clearDiv('results');
+                    }
+                    Promise.all([promiseId, promiseGame])
+                    .then(responses => Promise.all(responses.map(res => res.json()))
+                    )
+                    .then(response => {
+                        const games = parseGame(response[1][value]);
+                        const users = getUsers(response[0]);
+                        const rounds = parseRound(response[1][value]);
+                        const table = document.getElementById('results');
+                        const tableHeader = games.slice();
+                        tableHeader.unshift({'gameName': 'User name'});
+                        tableHeader.push({'gameName': 'Sum'});
+                        createTableHeader(table, tableHeader, 'gameName');
+                        table.appendChild(createTableRows(rounds, users, games));
+                        table.style.display = 'block';
+                    })
+                };
+                    </pre>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

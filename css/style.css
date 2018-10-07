@@ -16,11 +16,15 @@ body {
     grid-template-columns: 30% 70%;
 }
 
-.font-color {
+.font-color-general {
     color: #1E90FF;
 }
 
-.add-bottom-gap-small{
+.font-color-subparagraph{
+    color: rgb(118, 205, 216);
+}
+
+.add-bottom-gap-small {
     margin-bottom: 10px;
 }
 
@@ -41,9 +45,19 @@ body {
     font-size: 20px;
 }
 
+.inner-header-subparagraph {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.main-year {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .inner-main {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .inner-grid {
@@ -52,11 +66,15 @@ body {
     grid-template-rows: auto;
     align-items: center;
     grid-gap: 35px;
+    max-height: 600px;
 }
 
 .inner-grid-main {
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
+    margin-left: 10px;
+    grid-gap: 10px;
 }
+
 
